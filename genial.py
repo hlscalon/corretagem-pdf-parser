@@ -20,11 +20,14 @@ def parsePage(text):
 
         if i == 3:
             parsed.append(line)
+            continue
 
         if i >= 22 and ix == 0:
             parsed.append(line)
+            continue
 
         if ix > 3 and ix < 30:
             parsed.append(line)
+            continue
 
     return parsed
